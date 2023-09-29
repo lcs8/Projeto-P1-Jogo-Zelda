@@ -30,9 +30,11 @@ O Zelda Arcade é um jogo 2D, desenvolvido em python utilizando a biblioteca pyg
 ![](https://github.com/lcs8/Projeto-P1-Jogo-Zelda/blob/main/sprits/Hearth.png) Elemento aumenta 1 vida a Zelda
 ## Enemy
 ### Personagens responsáveis por retirar vidas de Zelda a cada vez que Zelda toca em um deles:
-![](https://github.com/lcs8/Projeto-P1-Jogo-Zelda/blob/main/sprits/enemy1.png) :Retira 1 vida de Zelda
-![](https://github.com/lcs8/Projeto-P1-Jogo-Zelda/blob/main/sprits/enemy2.png) :Retira 2 vidas de Zelda
-![](https://github.com/lcs8/Projeto-P1-Jogo-Zelda/blob/main/sprits/enemy3.png) :Retira 3 vidas de Zelda
+![](https://github.com/lcs8/Projeto-P1-Jogo-Zelda/blob/main/sprits/enemy1.png) Retira 1 vida de Zelda
+
+![](https://github.com/lcs8/Projeto-P1-Jogo-Zelda/blob/main/sprits/enemy2.png) Retira 2 vidas de Zelda
+
+![](https://github.com/lcs8/Projeto-P1-Jogo-Zelda/blob/main/sprits/enemy3.png) Retira 3 vidas de Zelda
 
 
 - A descrição da **arquitetura** do projeto, explicando como o **código foi organizado**;
