@@ -28,6 +28,8 @@ O Zelda Arcade é um jogo 2D, desenvolvido em python utilizando a biblioteca pyg
 ## Hearth
 ### Elemento coletável por Zelda com objetivo de aumentar seu número de vida:
 ![](https://github.com/lcs8/Projeto-P1-Jogo-Zelda/blob/main/sprits/Hearth.png) Elemento aumenta 1 vida a Zelda
+## Enemy
+### Personagens responsáveis por retirar vidas de Zelda a cada vez que Zelda toca em um deles:
 
 
 - A descrição da **arquitetura** do projeto, explicando como o **código foi organizado**;
