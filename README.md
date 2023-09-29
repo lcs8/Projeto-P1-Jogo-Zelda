@@ -38,7 +38,7 @@ O Zelda Arcade é um jogo 2D, inspirado em The Legend of Zelda uma série de jo
 ![](https://github.com/lcs8/Projeto-P1-Jogo-Zelda/blob/main/sprits/enemy3.png) Retira 3 vidas de Link
 # Organização do código
 ## Fluxograma
-![](https://github.com/lcs8/Projeto-P1-Jogo-Zelda/blob/main/Fluxograma.pdf)
+![](https://github.com/lcs8/Projeto-P1-Jogo-Zelda/blob/main/sprits/Fluxograma_page-0001.jpg)
 
 - As **capturas de tela** do sistema funcionando para compor a galeria de projetos
 - As **ferramentas**, **bibliotecas**, **frameworks** utilizados com as respectivas **justificativas** para o uso;
