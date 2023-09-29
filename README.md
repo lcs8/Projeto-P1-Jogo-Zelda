@@ -25,8 +25,8 @@ O Zelda Arcade é um jogo 2D, desenvolvido em python utilizando a biblioteca pyg
 ## Arrow
 ### Elemento coletável por Zelda:
 ![](https://github.com/lcs8/Projeto-P1-Jogo-Zelda/blob/main/sprits/Arrow.png) Elemento inserido para futuras atualizações
-
-
+## Hearth
+### Elemento coletável por Zelda com objetivo de aumentar seu número de vida:
 
 
 - A descrição da **arquitetura** do projeto, explicando como o **código foi organizado**;
