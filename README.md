@@ -9,6 +9,10 @@ O Zelda Arcade é um jogo 2D, desenvolvido em python utilizando a biblioteca pyg
 - Gabriel Mendonça(gmva)
 - Luiz Carlos(lcs8)
 
+# Elementos do Jogo
+
+
+
 - A descrição da **arquitetura** do projeto, explicando como o **código foi organizado**;
 - As **capturas de tela** do sistema funcionando para compor a galeria de projetos
 - As **ferramentas**, **bibliotecas**, **frameworks** utilizados com as respectivas **justificativas** para o uso;
