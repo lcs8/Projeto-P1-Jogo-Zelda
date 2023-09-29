@@ -21,6 +21,7 @@ O Zelda Arcade é um jogo 2D, inspirado em The Legend of Zelda uma série de jo
 ### Elementos coletáveis objetivo de Link, cada rupee tem seu valor de coleta:
 ![](https://github.com/lcs8/Projeto-P1-Jogo-Zelda/blob/main/sprits/red_rupee.png) Ruppe vermelho vale 1 ponto
 ![](https://github.com/lcs8/Projeto-P1-Jogo-Zelda/blob/main/sprits/blue_rupee.png) Rupee azul vale 5 pontos
+
 ![](https://github.com/lcs8/Projeto-P1-Jogo-Zelda/blob/main/sprits/yellow_rupee.png) Rupee amarelo vale 10 pontos
 ## Arrow
 ### Elemento coletável por Link:
