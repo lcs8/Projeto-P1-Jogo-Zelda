@@ -22,6 +22,9 @@ O Zelda Arcade é um jogo 2D, desenvolvido em python utilizando a biblioteca pyg
 ![](https://github.com/lcs8/Projeto-P1-Jogo-Zelda/blob/main/sprits/red_rupee.png) O ruppe vermelho vale 1 ponto
 ![](https://github.com/lcs8/Projeto-P1-Jogo-Zelda/blob/main/sprits/blue_rupee.png) O rupee azul vale 5 pontos
 ![](https://github.com/lcs8/Projeto-P1-Jogo-Zelda/blob/main/sprits/yellow_rupee.png) O rupee amarelo vale 10 pontos
+## Arrow
+### Elemento coletável por Zelda:
+
 
 
 
