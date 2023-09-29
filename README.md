@@ -1,6 +1,6 @@
 # Projeto-P1-Jogo-Zelda
 
-O Zelda Arcade é um jogo 2D, desenvolvido em python utilizando a biblioteca pygame, com a finalidade de ser um projeto a ser apresentado na cadeira de P1.2023.2 do curso de Sistema de Informação da UFPE (Universidade Federal de Pernambuco). Projeto esse desenvolvido utilizando a implementação POO (Programação Orientada a Objeto). A intenção do jogo é ser do tipo coletável, onde o objetivo de Zelda é coletar o máximo de rupee possíveis, em um determinado intervalo de tempo pré estabelecido, podendo coletar vidas para aumentá-la ajudando-a na possível colisão com seus inimigos.
+O Zelda Arcade é um jogo 2D, desenvolvido em python utilizando a biblioteca pygame, com a finalidade de ser um projeto a ser apresentado na cadeira de P1SI.2023.1 do curso de Sistema de Informação da UFPE (Universidade Federal de Pernambuco). Projeto esse desenvolvido utilizando a implementação POO (Programação Orientada a Objeto). A intenção do jogo é ser do tipo coletável, onde o objetivo de Zelda é coletar o máximo de rupee possíveis, em um determinado intervalo de tempo pré estabelecido, podendo coletar vidas para aumentá-la ajudando-a na possível colisão com seus inimigos.
 ![Imagem do personagem do jogo](https://github.com/lcs8/Projeto-P1-Jogo-Zelda/blob/main/sprits/Zelda.jpg)
 
 # Membros
