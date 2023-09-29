@@ -1,6 +1,6 @@
 # Projeto-P1-Jogo-Zelda
 
-O Zelda Arcade é um jogo 2D, desenvolvido em python utilizando a biblioteca pygame, com a finalidade de ser um projeto a ser apresentado na cadeira de P1SI.2023.1 do curso de Sistema de Informação da UFPE (Universidade Federal de Pernambuco). Projeto esse desenvolvido utilizando a implementação POO (Programação Orientada a Objeto). A intenção do jogo é ser do tipo coletável, onde o objetivo de Zelda é coletar o máximo de rupee possíveis, em um determinado intervalo de tempo pré estabelecido, podendo coletar vidas para aumentá-la ajudando-a na possível colisão com seus inimigos.Para rodar o jogo, realize o download do arquivo nesse repositório, para ser executado é necessário que usuário tenha instalado no seu computador uma versão do python3 e instalado a biblioteca Pygame.Pygame é uma biblioteca de jogos multiplataforma (independente de sistema operacional) feita para ser utilizada em conjunto com a linguagem de programação Python. Para instalar no seu computador execute o comando **pip install pygame** no terminal do seu computador.
+O Zelda Arcade é um jogo 2D, desenvolvido em python utilizando a biblioteca pygame, com a finalidade de ser um projeto a ser apresentado na cadeira de P1SI.2023.1 do curso de Sistema de Informação da UFPE (Universidade Federal de Pernambuco). Projeto esse desenvolvido utilizando a implementação POO (Programação Orientada a Objeto). A intenção do jogo é ser do tipo coletável, onde o objetivo de Link é coletar o máximo de rupee possíveis, em um determinado intervalo de tempo pré estabelecido, podendo coletar vidas para aumentá-la ajudando-a na possível colisão com seus inimigos.Para rodar o jogo, realize o download do arquivo nesse repositório, para ser executado é necessário que usuário tenha instalado no seu computador uma versão do python3 e instalado a biblioteca Pygame.Pygame é uma biblioteca de jogos multiplataforma (independente de sistema operacional) feita para ser utilizada em conjunto com a linguagem de programação Python. Para instalar no seu computador execute o comando **pip install pygame** no terminal do seu computador.
 ![Imagem do personagem do jogo](https://github.com/lcs8/Projeto-P1-Jogo-Zelda/blob/main/sprits/Zelda.jpg)
 
 # Membros
@@ -18,23 +18,23 @@ O Zelda Arcade é um jogo 2D, desenvolvido em python utilizando a biblioteca pyg
 - a : Faz com que a personagem ande para o lado esquerdo dentro do ambiente do jogo.
 - d : Faz com que a personagem ande para o lado direito dentro do ambiente do jogo.
 ## Rupees
-### Elementos coletáveis objetivo de Zelda, cada rupee tem seu valor de coleta:
+### Elementos coletáveis objetivo de Link, cada rupee tem seu valor de coleta:
 ![](https://github.com/lcs8/Projeto-P1-Jogo-Zelda/blob/main/sprits/red_rupee.png) Ruppe vermelho vale 1 ponto
 ![](https://github.com/lcs8/Projeto-P1-Jogo-Zelda/blob/main/sprits/blue_rupee.png) Rupee azul vale 5 pontos
 ![](https://github.com/lcs8/Projeto-P1-Jogo-Zelda/blob/main/sprits/yellow_rupee.png) Rupee amarelo vale 10 pontos
 ## Arrow
-### Elemento coletável por Zelda:
+### Elemento coletável por Link:
 ![](https://github.com/lcs8/Projeto-P1-Jogo-Zelda/blob/main/sprits/Arrow.png) Elemento inserido para futuras atualizações
 ## Hearth
-### Elemento coletável por Zelda com objetivo de aumentar seu número de vida:
-![](https://github.com/lcs8/Projeto-P1-Jogo-Zelda/blob/main/sprits/Hearth.png) Elemento aumenta 1 vida a Zelda
+### Elemento coletável por Link com objetivo de aumentar seu número de vida:
+![](https://github.com/lcs8/Projeto-P1-Jogo-Zelda/blob/main/sprits/Hearth.png) Elemento aumenta 1 vida de Link
 ## Enemy
-### Personagens responsáveis por retirar vidas de Zelda a cada vez que Zelda toca em um deles:
-![](https://github.com/lcs8/Projeto-P1-Jogo-Zelda/blob/main/sprits/enemy1.png) Retira 1 vida de Zelda
+### Personagens responsáveis por retirar vidas de Link a cada vez que Link toca em um deles:
+![](https://github.com/lcs8/Projeto-P1-Jogo-Zelda/blob/main/sprits/enemy1.png) Retira 1 vida de Link
 
-![](https://github.com/lcs8/Projeto-P1-Jogo-Zelda/blob/main/sprits/enemy2.png) Retira 2 vidas de Zelda
+![](https://github.com/lcs8/Projeto-P1-Jogo-Zelda/blob/main/sprits/enemy2.png) Retira 2 vidas de Link
 
-![](https://github.com/lcs8/Projeto-P1-Jogo-Zelda/blob/main/sprits/enemy3.png) Retira 3 vidas de Zelda
+![](https://github.com/lcs8/Projeto-P1-Jogo-Zelda/blob/main/sprits/enemy3.png) Retira 3 vidas de Link
 
 
 - A descrição da **arquitetura** do projeto, explicando como o **código foi organizado**;
