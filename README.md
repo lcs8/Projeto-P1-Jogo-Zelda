@@ -11,7 +11,7 @@ O Zelda Arcade é um jogo 2D, inspirado em The Legend of Zelda uma série de jo
 
 # Elementos do Jogo
 ## Link
-![](https://github.com/lcs8/Projeto-P1-Jogo-Zelda/blob/main/sprits/links%20sprites/down.pn)  
+![](https://github.com/lcs8/Projeto-P1-Jogo-Zelda/blob/main/sprits/Link2.jpg)
 ### Personagem principal controlado pelo jogador, utilizando as seguintes teclas:
 - w : Faz com que a personagem ande para cima dentro do ambiente do jogo.
 - s : Faz com que a personagem ande para baixo dentro do ambiente do jogo.
