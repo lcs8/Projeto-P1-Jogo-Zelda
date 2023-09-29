@@ -39,7 +39,7 @@ O Zelda Arcade é um jogo 2D, inspirado em The Legend of Zelda uma série de jo
 # Organização do código
 ## Fluxograma
 ![](https://github.com/lcs8/Projeto-P1-Jogo-Zelda/blob/main/sprits/Fluxograma_page-0001.jpg)
-- Sprits : Pasta onde está contida todas as imagens e mùsicar contidas no jogo.
+- Sprits : Pasta onde está todas as imagens e mùsicas contidas no código jogo e na construção desse arquivo.
 - Classe Player : Responsavel por carregar o objeto do personagem Link, bem como seu método de movimentação dentro do jogo.
 - Classe Item : Responsavel por carregar o restante dos itens do jogo, bem como seus métodos de coordenadas dentro do jogo.
 - Main : Responsavel pelo o que pode ser chamado de estrutura geral interativa do jogo, contem o loop principal do jogo e instancia as classes. Também armazena as colisões, pontuaçao, tempo e score do jogo.
