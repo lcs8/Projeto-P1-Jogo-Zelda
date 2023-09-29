@@ -17,6 +17,9 @@ O Zelda Arcade é um jogo 2D, desenvolvido em python utilizando a biblioteca pyg
 - s : Faz com que a personagem ande para baixo dentro do ambiente do jogo.
 - a : Faz com que a personagem ande para o lado esquerdo dentro do ambiente do jogo.
 - d : Faz com que a personagem ande para o lado direito dentro do ambiente do jogo.
+## Rupees
+### Elementos coletáveis objetivo de Zelda,cada rupee tem seu valor de coleta:
+
 
 
 - A descrição da **arquitetura** do projeto, explicando como o **código foi organizado**;
