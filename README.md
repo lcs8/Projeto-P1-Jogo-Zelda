@@ -44,23 +44,20 @@ O Zelda Arcade é um jogo 2D, inspirado em The Legend of Zelda uma série de jo
 - Classe Item : Responsavel por carregar o restante dos itens do jogo, bem como seus métodos de coordenadas dentro do jogo.
 - Main : Responsavel pelo o que pode ser chamado de estrutura geral interativa do jogo, contem o loop principal do jogo e instancia as classes. Também armazena as colisões, pontuaçao, tempo e score do jogo.
 ### Bibliotecas e Ferramentas
-- *Pygame* : Pygame é um conjunto de módulos python para desenvolvimento de jogos, essencial para o desemvolvimento do projeto.
+- *Pygame* : Pygame é um conjunto de módulos python para desenvolvimento de jogos, essencial para o desenvolvimento do projeto.
 - *Os* : Em Python é uma biblioteca padrão muito útil quando se trata de interagir com o sistema operacional. utilizamos para carregar as sprits(imagens e músicas) do jogo.
-- *Random* : Essa biblioteca oferece métodos para gerar números aleatórios, embaralhar listas e sortear item de sequências. utilizamos na obtenção de aleatóriedade nos itens do jogo.
+- *Random* : Essa biblioteca oferece métodos para gerar números aleatórios, embaralhar listas e sortear item de sequências. utilizamos na obtenção de aleatoriedade nos itens do jogo.
 - *Visual Studio Code* : Editor de código-fonte e inclui suporte para depuração, muito útil na hora de implementar o código ajudando a entender o passo a passo do mesmo.
 # Divisão de Trabalho
 # Conceitos
+Dentro do projeto foi passado tanto conceitos básicos vistos no inicio da disciplina como estrutura de decisão e estrutura de repetição bem como conceitos de listas, tuplas. Analisando o código dentro dos conceitos visto não foi utilizado dicionario mas também foi utilizado sistematicamente o conceito de funções e o principal que era fundamental para o projeto, as noções iniciais de POO (Programação Orientada a Objeto).
 # Desafios Erros e Lições Aprendidas
-- Qual foi o maior erro cometido durante o projeto? Como vocês lidaram com ele?
-- Qual foi o maior desafio enfrentado durante o projeto? Como vocês lidaram com ele?
-- Quais as lições aprendidas durante o projeto?
+### - Qual foi o maior erro cometido durante o projeto? Como vocês lidaram com ele?
+Um dos maiores erros cometidos ao desenvolver esse projeto foi o subestimar o entendimento da POO, para o grupo foi e esta sendo um processo desafiador.
+### - Qual foi o maior desafio enfrentado durante o projeto? Como vocês lidaram com ele?
+O maior desafio continua sendo entende o funcionamento do POO, que aparentemente se bem utilizada facilita o desenvolvimento dos código, isso pode ser uma premissa verdadeira, mas entender POO tem uma curva de aprendizado maior.
+### - Quais as lições aprendidas durante o projeto?
+O conceito de desenvolver algo em conjunto, entender as ideias individuais e como essas ideias são concatenadas no produto final e as lições técnicas aprendidas ao longo do desenvolvimento do projeto.
 # Capturas de Tela
 
-- As **capturas de tela** do sistema funcionando para compor a galeria de projetos
-- As **ferramentas**, **bibliotecas**, **frameworks** utilizados com as respectivas **justificativas** para o uso;
-- A **divisão de trabalho** dentro do grupo (**quem fez o que**);
-- Os **conceitos** que foram apresentados durante a disciplina e utilizados no projeto (indicando onde foram usados);
-- Os **desafios** e **erros** enfrentados no decorrer do projeto e as **lições aprendidas**. Para tanto, respondam as seguintes perguntas:
-- Qual foi o maior erro cometido durante o projeto? Como vocês lidaram com ele?
-- Qual foi o maior desafio enfrentado durante o projeto? Como vocês lidaram com ele?
-- Quais as lições aprendidas durante o projeto?
+
