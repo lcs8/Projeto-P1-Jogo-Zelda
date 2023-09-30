@@ -43,11 +43,18 @@ O Zelda Arcade é um jogo 2D, inspirado em The Legend of Zelda uma série de jo
 - Classe Player : Responsavel por carregar o objeto do personagem Link, bem como seu método de movimentação dentro do jogo.
 - Classe Item : Responsavel por carregar o restante dos itens do jogo, bem como seus métodos de coordenadas dentro do jogo.
 - Main : Responsavel pelo o que pode ser chamado de estrutura geral interativa do jogo, contem o loop principal do jogo e instancia as classes. Também armazena as colisões, pontuaçao, tempo e score do jogo.
-### Bibliotecas
-- *Pygame* :
-- *Os* :
-- *Random* :
-- *Sprite* :
+### Bibliotecas e Ferramentas
+- *Pygame* : Pygame é um conjunto de módulos python para desenvolvimento de jogos, essencial para o desemvolvimento do projeto.
+- *Os* : Em Python é uma biblioteca padrão muito útil quando se trata de interagir com o sistema operacional. utilizamos para carregar as sprits(imagens e músicas) do jogo.
+- *Random* : Essa biblioteca oferece métodos para gerar números aleatórios, embaralhar listas e sortear item de sequências. utilizamos na obtenção de aleatóriedade nos itens do jogo.
+- *Visual Studio Code* : Editor de código-fonte e inclui suporte para depuração, muito útil na hora de implementar o código ajudando a entender o passo a passo do mesmo.
+# Divisão de Trabalho
+# Conceitos
+# Desafios Erros e Lições Aprendidas
+- Qual foi o maior erro cometido durante o projeto? Como vocês lidaram com ele?
+- Qual foi o maior desafio enfrentado durante o projeto? Como vocês lidaram com ele?
+- Quais as lições aprendidas durante o projeto?
+# Capturas de Tela
 
 - As **capturas de tela** do sistema funcionando para compor a galeria de projetos
 - As **ferramentas**, **bibliotecas**, **frameworks** utilizados com as respectivas **justificativas** para o uso;
