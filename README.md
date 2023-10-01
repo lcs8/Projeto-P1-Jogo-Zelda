@@ -13,10 +13,10 @@ O Zelda Arcade é um jogo 2D, inspirado em The Legend of Zelda uma série de jo
 ## Link
 ![](https://github.com/lcs8/Projeto-P1-Jogo-Zelda/blob/main/sprits/Link.png)
 ### Personagem principal controlado pelo jogador, utilizando as seguintes teclas:
-- w : Faz com que a personagem ande para cima dentro do ambiente do jogo.
-- s : Faz com que a personagem ande para baixo dentro do ambiente do jogo.
-- a : Faz com que a personagem ande para o lado esquerdo dentro do ambiente do jogo.
-- d : Faz com que a personagem ande para o lado direito dentro do ambiente do jogo.
+- w : Faz com que o personagem ande para cima dentro do ambiente do jogo.
+- s : Faz com que o personagem ande para baixo dentro do ambiente do jogo.
+- a : Faz com que o personagem ande para o lado esquerdo dentro do ambiente do jogo.
+- d : Faz com que o personagem ande para o lado direito dentro do ambiente do jogo.
 ## Rupees
 ### Elementos coletáveis objetivo de Link, cada rupee tem seu valor de coleta:
 ![](https://github.com/lcs8/Projeto-P1-Jogo-Zelda/blob/main/sprits/red_rupee.png) Ruppe vermelho vale 10 ponto
