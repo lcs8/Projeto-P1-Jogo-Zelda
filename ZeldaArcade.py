@@ -18,7 +18,7 @@ SPRITES_WIDTH, SPRITES_HEIGHT = 90, 90
 VEL = 5
 BACKGROUND = pygame.image.load(os.path.join('sprits', 'bg.png'))
 BACKGROUND = pygame.transform.scale(BACKGROUND, [WIDTH,HEIGHT])
-
+MARGIN = 100
 
 class Player(pygame.sprite.Sprite):
     def __init__(self):
@@ -76,25 +76,26 @@ class Item(pygame.sprite.Sprite):
             self.rupee_imagem = self.Sprites[2]
 
         self.rupee_imagem = pygame.transform.scale(self.rupee_imagem,(30, 50))
-        self.rupee_x , self.rupee_y = random.randint(0,WIDTH), random.randint(0,HEIGHT)
+        self.rupee_x , self.rupee_y = random.randint(MARGIN,WIDTH-MARGIN), random.randint(MARGIN,HEIGHT-MARGIN)
         self.rupee_rect = pygame.Rect(self.rupee_x, self.rupee_y, 30, 50)
         self.rupee_rect.x = self.rupee_x
         self.rupee_rect.y = self.rupee_y
     def Arrow(self):
         self.arrow_imagem = self.Sprites[3]
         self.arrow_imagem = pygame.transform.scale(self.arrow_imagem,(60, 60))
-        self.arrow_x, self.arrow_y = random.randint(0,WIDTH), random.randint(0,HEIGHT)
+        self.arrow_x, self.arrow_y = random.randint(MARGIN,WIDTH-MARGIN), random.randint(MARGIN,HEIGHT-MARGIN)
         self.arrow_rect = pygame.Rect(self.arrow_x, self.arrow_y, 60, 60)
         self.arrow_rect.x = self.arrow_x
         self.arrow_rect.y = self.arrow_y
     def Hearth(self):
         self.hearth_imagem = self.Sprites[4]
         self.hearth_imagem = pygame.transform.scale(self.hearth_imagem,(50, 50))
-        self.hearth_x, self.hearth_y = random.randint(0,WIDTH), random.randint(0,HEIGHT)
+        self.hearth_x, self.hearth_y = random.randint(MARGIN,WIDTH-MARGIN), random.randint(MARGIN,HEIGHT-MARGIN)
         self.hearth_rect = pygame.Rect(self.hearth_x, self.hearth_y, 50, 50)
         self.hearth_rect.x = self.hearth_x
         self.hearth_rect.y = self.hearth_y
     def Enemy(self,enemy_value):
+        self.enemy_timer = 5
         self.enemy_power = enemy_value
         if self.enemy_power < 70:
             self.enemy_imagem = self.Sprites[5]
@@ -103,7 +104,7 @@ class Item(pygame.sprite.Sprite):
         if self.enemy_power >= 90:
             self.enemy_imagem = self.Sprites[7]
         self.enemy_imagem = pygame.transform.scale(self.enemy_imagem,(200, 150))
-        self.enemy_x , self.enemy_y = random.randint(0,WIDTH), random.randint(0,HEIGHT)
+        self.enemy_x , self.enemy_y = random.randint(MARGIN,WIDTH-MARGIN), random.randint(MARGIN,HEIGHT-MARGIN)
         self.enemy_rect = pygame.Rect(self.enemy_x, self.enemy_y, 200, 150)
         self.enemy_rect.x = self.enemy_x 
         self.enemy_rect.y = self.enemy_y
@@ -112,17 +113,16 @@ def main():
     HEARTHS = 3
     RUPEES_COLECTED = 0 
     ARROWS_COLECTED = 0
-    ENEMY_COLECTED = 0
+    
     TIMER = 3600
+    ENEMY_TIMER = 180
     PAUSE = 100
     rupee_color = 0
     enemy_power = 0
-    direction = 1
-    speed_x = 5
-    speed_y = 3
+    
     music_colid = pygame.mixer.Sound(os.path.join('sprits', 'getCandy.ogg'))
     music_enemy = pygame.mixer.Sound(os.path.join('sprits', 'hitMonster.wav'))
-    music_arrow = pygame.mixer.Sound(os.path.join('sprits', 'arrow.wav'))
+    music_enemy_teleport = pygame.mixer.Sound(os.path.join('sprits', 'arrow.wav'))
     font = pygame.font.Font(os.path.join('sprits', 'Roboto-Black.ttf'), 30)
     clock = pygame.time.Clock()
     player = Player()
@@ -131,6 +131,7 @@ def main():
     itens.Arrow()
     itens.Hearth()
     itens.Enemy(enemy_power)
+
     running = True
     while running == True:
         
@@ -149,69 +150,56 @@ def main():
         if player.Rect.colliderect(itens.rupee_rect):
             if itens.rupee_color < 70:
                 RUPEES_COLECTED += 1
-                itens.rupee_rect = pygame.Rect(random.randint(200,(WIDTH - 200)), random.randint(200,(HEIGHT - 200)),SPRITES_WIDTH/2, SPRITES_HEIGHT/2)
+                itens.rupee_rect = pygame.Rect(random.randint(MARGIN,WIDTH-MARGIN), random.randint(MARGIN,HEIGHT-MARGIN),SPRITES_WIDTH/2, SPRITES_HEIGHT/2)
                 rupee_color = random.randint(0, 100)
                 itens.Rupee(rupee_color)
                 music_colid.play()
             elif itens.rupee_color >= 70 and itens.rupee_color < 90:
                 RUPEES_COLECTED += 5
-                itens.rupee_rect = pygame.Rect(random.randint(200,(WIDTH - 200)), random.randint(200,(HEIGHT - 200)),SPRITES_WIDTH/2, SPRITES_HEIGHT/2)
+                itens.rupee_rect = pygame.Rect(random.randint(MARGIN,WIDTH-MARGIN), random.randint(MARGIN,HEIGHT-MARGIN),SPRITES_WIDTH/2, SPRITES_HEIGHT/2)
                 rupee_color = random.randint(0, 100)
                 itens.Rupee(rupee_color)
                 music_colid.play()
             elif itens.rupee_color >= 90:
                 RUPEES_COLECTED += 10
-                itens.rupee_rect = pygame.Rect(random.randint(200,(WIDTH - 200)), random.randint(200,(HEIGHT - 200)),SPRITES_WIDTH/2, SPRITES_HEIGHT/2)
+                itens.rupee_rect = pygame.Rect(random.randint(MARGIN,WIDTH-MARGIN), random.randint(MARGIN,HEIGHT-MARGIN),SPRITES_WIDTH/2, SPRITES_HEIGHT/2)
                 rupee_color = random.randint(0, 100)
                 itens.Rupee(rupee_color)
                 music_colid.play()
         if player.Rect.colliderect(itens.arrow_rect):    
             ARROWS_COLECTED += 1 
-            itens.arrow_rect = pygame.Rect(random.randint(200,(WIDTH - 200)), random.randint(200,(HEIGHT - 200)),SPRITES_WIDTH, SPRITES_HEIGHT)
+            itens.arrow_rect = pygame.Rect(random.randint(MARGIN,WIDTH-MARGIN), random.randint(MARGIN,HEIGHT-MARGIN),SPRITES_WIDTH, SPRITES_HEIGHT)
             itens.Arrow()
-            music_arrow.play()
+            music_colid.play()
         if player.Rect.colliderect(itens.hearth_rect):    
-            HEARTHS += 1
-            itens.hearth_rect = pygame.Rect(random.randint(200,WIDTH - 200), random.randint(200,HEIGHT - 200),SPRITES_WIDTH/2, SPRITES_HEIGHT/2)
+            if HEARTHS < 8:
+                HEARTHS += 1
+            itens.hearth_rect = pygame.Rect(random.randint(MARGIN,WIDTH-MARGIN), random.randint(MARGIN,HEIGHT-MARGIN),SPRITES_WIDTH/2, SPRITES_HEIGHT/2)
             itens.Hearth()
             music_colid.play()
             
         if player.Rect.colliderect(itens.enemy_rect):
             if itens.enemy_power < 70:
-                ENEMY_COLECTED -= 1
-                itens.enemy_rect = pygame.Rect(random.randint(200,(WIDTH - 200)), random.randint(200,(HEIGHT - 200)),SPRITES_WIDTH/2, SPRITES_HEIGHT/2)
+                HEARTHS -= 1
+                itens.enemy_rect = pygame.Rect(random.randint(MARGIN,WIDTH-MARGIN), random.randint(MARGIN,HEIGHT-MARGIN),SPRITES_WIDTH/2, SPRITES_HEIGHT/2)
                 enemy_power = random.randint(0, 100)
                 itens.Enemy(enemy_power)
                 music_enemy.play()
             elif itens.enemy_power >= 70 and itens.enemy_power < 90:
-                ENEMY_COLECTED -= 2
-                itens.enemy_rect = pygame.Rect(random.randint(200,(WIDTH - 200)), random.randint(200,(HEIGHT - 200)),SPRITES_WIDTH/2, SPRITES_HEIGHT/2)
+                HEARTHS -= 2
+                itens.enemy_rect = pygame.Rect(random.randint(MARGIN,WIDTH-MARGIN), random.randint(MARGIN,HEIGHT-MARGIN),SPRITES_WIDTH/2, SPRITES_HEIGHT/2)
                 enemy_power = random.randint(0, 100)
                 itens.Enemy(enemy_power)
                 music_enemy.play()
             elif itens.enemy_power >= 90:
-                ENEMY_COLECTED -= 3
-                itens.enemy_rect = pygame.Rect(random.randint(200,(WIDTH - 200)), random.randint(200,(HEIGHT - 200)),SPRITES_WIDTH/2, SPRITES_HEIGHT/2)
+                HEARTHS -= 3
+                itens.enemy_rect = pygame.Rect(random.randint(MARGIN,WIDTH-MARGIN), random.randint(MARGIN,HEIGHT-MARGIN),SPRITES_WIDTH/2, SPRITES_HEIGHT/2)
                 enemy_power = random.randint(0, 100)
                 itens.Enemy(enemy_power)
                 music_enemy.play()
-            HEARTHS+=ENEMY_COLECTED
-        if itens.enemy_rect.left <= 30 or itens.enemy_rect.right >= 1000:
-            direction *= -1
-            speed_x = randint(0, 8) * direction
-            speed_y = randint(0, 8) * direction
-            if speed_x == 0 and speed_y == 0:
-                speed_x = randint(2, 8) * direction
-                speed_y = randint(2, 8) * direction
-        if itens.enemy_rect.top <= 30 or itens.enemy_rect.bottom >= 1000:
-            direction *= -1
-            speed_x = randint(0, 8) * direction
-            speed_y = randint(0, 8) * direction
-            if speed_x == 0 and speed_y == 0:
-                speed_x = randint(2, 8) * direction
-                speed_y = randint(2, 8) * direction
-        itens.enemy_rect.left += speed_x
-        itens.enemy_rect.top += speed_y
+        
+            
+        
        
         
         score_text = font.render(f'Rupees: {RUPEES_COLECTED}', True, (255, 255, 255))
@@ -228,7 +216,7 @@ def main():
             points = font.render(f"TOTAL DE RUPPEES COLETADOS: {RUPEES_COLECTED} ",True, (255,255,255))
             points_rect = points.get_rect(center = (WIDTH/2, HEIGHT/2))
             WINDOW.blit(points,points_rect)
-            HEARTHS = 0
+            HEARTHS = -100
             PAUSE -= 1
             if PAUSE==0:
                 running = False
@@ -237,14 +225,20 @@ def main():
         WINDOW.blit(timer, (30,20))
         
         TIMER -=1
+        ENEMY_TIMER -= 1
+
+        if ENEMY_TIMER == 0:
+            ENEMY_TIMER = 180
+            itens.enemy_rect = pygame.Rect(random.randint(MARGIN,WIDTH-MARGIN), random.randint(MARGIN,HEIGHT-MARGIN),SPRITES_WIDTH/2, SPRITES_HEIGHT/2)
+            enemy_power = random.randint(0, 100)
+            itens.Enemy(enemy_power)
+            music_enemy_teleport.play()
         if TIMER<0:
             TIMER = 0
-            
             if TIMER==0:
                 points = font.render(f"TOTAL DE RUPPEES COLETADOS: {RUPEES_COLECTED} ",True, (255,255,255))
                 points_rect = points.get_rect(center = (WIDTH/2, HEIGHT/2))
                 WINDOW.blit(points,points_rect)
-                
                 PAUSE -=1
                 if PAUSE==0:
                     running = False
