@@ -33,7 +33,7 @@ O Zelda Arcade é um jogo 2D, inspirado em The Legend of Zelda uma série de jo
 ### Personagens responsáveis por retirar vidas de Link a cada vez que Link toca em um deles:
 ![](https://github.com/lcs8/Projeto-P1-Jogo-Zelda/blob/main/sprits/enemy1.png) Retira 1 vida de Link
 
-![]() Retira 2 vidas de Link
+![](https://github.com/lcs8/Projeto-P1-Jogo-Zelda/blob/main/sprits/enemy2.png) Retira 2 vidas de Link
 
 ![](https://github.com/lcs8/Projeto-P1-Jogo-Zelda/blob/main/sprits/enemy3.png) Retira 3 vidas de Link
 # Organização do código
