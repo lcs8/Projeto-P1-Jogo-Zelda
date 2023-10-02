@@ -49,6 +49,10 @@ O Zelda Arcade é um jogo 2D, inspirado em The Legend of Zelda uma série de jo
 - *Random* : Essa biblioteca oferece métodos para gerar números aleatórios, embaralhar listas e sortear item de sequências. utilizamos na obtenção de aleatoriedade nos itens do jogo.
 - *Visual Studio Code* : Editor de código-fonte e inclui suporte para depuração, muito útil na hora de implementar o código ajudando a entender o passo a passo do mesmo.
 # Divisão de Trabalho
+Lucas Occenstein - Responsável pelo sistema de movimento;
+Heriberto Guimarães - Responsável pela idealização, sistema de mundo e design gráfico;
+Gabriel Mendonça - Responsável pelo sistema de sons e música;
+Luiz Carlos - Responsável pelo sistema de itens e coletáveis.
 # Conceitos
 Dentro do projeto foi passado tanto conceitos básicos vistos no inicio da disciplina como estrutura de decisão e estrutura de repetição bem como conceitos de listas, tuplas. Analisando o código dentro dos conceitos visto não foi utilizado dicionario mas também foi utilizado sistematicamente o conceito de funções e o principal que era fundamental para o projeto, as noções iniciais de POO (Programação Orientada a Objeto).
 # Desafios Erros e Lições Aprendidas
