@@ -26,7 +26,7 @@ O Zelda Arcade é um jogo 2D, inspirado em The Legend of Zelda uma série de jo
 ## Arrow
 ### Elemento coletável por Link:
 ![](https://github.com/lcs8/Projeto-P1-Jogo-Zelda/blob/main/sprits/Arrow.png) Elemento inserido para futuras atualizações
-## Hearth
+## Health
 ### Elemento coletável por Link com objetivo de aumentar seu número de vida:
 ![](https://github.com/lcs8/Projeto-P1-Jogo-Zelda/blob/main/sprits/Hearth.png) Elemento aumenta 1 vida de Link
 ## Enemy
