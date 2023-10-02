@@ -59,5 +59,8 @@ O maior desafio continua sendo entende o funcionamento do POO, que aparentemente
 ### Quais as lições aprendidas durante o projeto?
 O conceito de desenvolver algo em conjunto, entender as ideias individuais e como essas ideias são concatenadas no produto final e as lições técnicas aprendidas ao longo do desenvolvimento do projeto.
 # Capturas de Tela
+![](https://github.com/lcs8/Projeto-P1-Jogo-Zelda/blob/main/ScreenGame/screen1.jpg)
+![](https://github.com/lcs8/Projeto-P1-Jogo-Zelda/blob/main/ScreenGame/screen2.jpg)
+![](https://github.com/lcs8/Projeto-P1-Jogo-Zelda/blob/main/ScreenGame/screen3.jpg)
 
 
